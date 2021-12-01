@@ -39,16 +39,25 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buzzinga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpn-1a-KzQ">
+                                <rect key="frame" x="172" y="345.5" width="70" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JSc-Z1-iA8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3DK-ze-ke0"/>
+                            <constraint firstItem="Fpn-1a-KzQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bva-Wc-GE4"/>
                             <constraint firstItem="JSc-Z1-iA8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JwB-Pw-cPs"/>
+                            <constraint firstItem="JSc-Z1-iA8" firstAttribute="top" secondItem="Fpn-1a-KzQ" secondAttribute="bottom" constant="42.5" id="xCL-po-72a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Czo-d5-6qG"/>
                     <connections>
+                        <outlet property="genericLabel" destination="Fpn-1a-KzQ" id="n4g-Mm-TDo"/>
                         <outlet property="numberLabel" destination="ar2-Hu-qrF" id="htR-g2-Ny6"/>
                         <outlet property="timesLabel" destination="y42-Ur-5ox" id="nAL-kI-Vpf"/>
                         <outlet property="youWereBusyLabel" destination="EDY-WT-chI" id="BjU-5Q-fVz"/>

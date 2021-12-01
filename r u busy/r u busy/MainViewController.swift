@@ -13,12 +13,11 @@ class MainViewController: UIViewController {
     @IBOutlet weak var youWereBusyLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var timesLabel: UILabel!
+    @IBOutlet weak var genericLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         numberLabel.text = String(Int.random(in: 1...100))
     }
 
-
 }
-
