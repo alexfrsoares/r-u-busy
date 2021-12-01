@@ -18,6 +18,7 @@
 		FA4267A027579CDA00E79FCC /* r_u_busyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42679F27579CDA00E79FCC /* r_u_busyUITests.swift */; };
 		FA4267A227579CDA00E79FCC /* r_u_busyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4267A127579CDA00E79FCC /* r_u_busyUITestsLaunchTests.swift */; };
 		FA7F7C8B2757D7AE0011B759 /* AppNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F7C8A2757D7AE0011B759 /* AppNotifications.swift */; };
+		FA7F7C8E2757DEC30011B759 /* TimeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F7C8D2757DEC30011B759 /* TimeHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		FA4267AE2757BF6300E79FCC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		FA4267AF2757BF6300E79FCC /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		FA7F7C8A2757D7AE0011B759 /* AppNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotifications.swift; sourceTree = "<group>"; };
+		FA7F7C8D2757DEC30011B759 /* TimeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		FA42677A27579CD800E79FCC /* r u busy */ = {
 			isa = PBXGroup;
 			children = (
+				FA7F7C8C2757DDEC0011B759 /* Helpers */,
 				FA7F7C892757D54D0011B759 /* Notifications */,
 				FA42677B27579CD800E79FCC /* AppDelegate.swift */,
 				FA42677D27579CD800E79FCC /* SceneDelegate.swift */,
@@ -141,6 +144,14 @@
 				FA7F7C8A2757D7AE0011B759 /* AppNotifications.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		FA7F7C8C2757DDEC0011B759 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA7F7C8D2757DEC30011B759 /* TimeHandler.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 				FA42678027579CD800E79FCC /* MainViewController.swift in Sources */,
 				FA7F7C8B2757D7AE0011B759 /* AppNotifications.swift in Sources */,
 				FA42678627579CD800E79FCC /* r_u_busy.xcdatamodeld in Sources */,
+				FA7F7C8E2757DEC30011B759 /* TimeHandler.swift in Sources */,
 				FA42677C27579CD800E79FCC /* AppDelegate.swift in Sources */,
 				FA42677E27579CD800E79FCC /* SceneDelegate.swift in Sources */,
 			);
