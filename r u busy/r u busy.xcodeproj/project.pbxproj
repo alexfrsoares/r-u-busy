@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA42677C27579CD800E79FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42677B27579CD800E79FCC /* AppDelegate.swift */; };
 		FA42677E27579CD800E79FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42677D27579CD800E79FCC /* SceneDelegate.swift */; };
-		FA42678027579CD800E79FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42677F27579CD800E79FCC /* ViewController.swift */; };
+		FA42678027579CD800E79FCC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42677F27579CD800E79FCC /* MainViewController.swift */; };
 		FA42678327579CD800E79FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA42678127579CD800E79FCC /* Main.storyboard */; };
 		FA42678627579CD800E79FCC /* r_u_busy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA42678427579CD800E79FCC /* r_u_busy.xcdatamodeld */; };
 		FA42678827579CDA00E79FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA42678727579CDA00E79FCC /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		FA42677827579CD800E79FCC /* r u busy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "r u busy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA42677B27579CD800E79FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA42677D27579CD800E79FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA42677F27579CD800E79FCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA42677F27579CD800E79FCC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA42678227579CD800E79FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA42678527579CD800E79FCC /* r_u_busy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = r_u_busy.xcdatamodel; sourceTree = "<group>"; };
 		FA42678727579CDA00E79FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			children = (
 				FA42677B27579CD800E79FCC /* AppDelegate.swift */,
 				FA42677D27579CD800E79FCC /* SceneDelegate.swift */,
-				FA42677F27579CD800E79FCC /* ViewController.swift */,
+				FA42677F27579CD800E79FCC /* MainViewController.swift */,
 				FA42678127579CD800E79FCC /* Main.storyboard */,
 				FA42678727579CDA00E79FCC /* Assets.xcassets */,
 				FA42678927579CDA00E79FCC /* LaunchScreen.storyboard */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA42678027579CD800E79FCC /* ViewController.swift in Sources */,
+				FA42678027579CD800E79FCC /* MainViewController.swift in Sources */,
 				FA42678627579CD800E79FCC /* r_u_busy.xcdatamodeld in Sources */,
 				FA42677C27579CD800E79FCC /* AppDelegate.swift in Sources */,
 				FA42677E27579CD800E79FCC /* SceneDelegate.swift in Sources */,
