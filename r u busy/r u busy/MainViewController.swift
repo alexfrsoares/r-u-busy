@@ -15,9 +15,15 @@ class MainViewController: UIViewController {
     @IBOutlet weak var timesLabel: UILabel!
     @IBOutlet weak var genericLabel: UILabel!
 
+    let appNotification = AppNotifications()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         numberLabel.text = String(Int.random(in: 1...100))
+
+        appNotification.askForPermission()
+        appNotification.configureNotification()
+        appNotification.setSchedule()
     }
 
 }
