@@ -12,7 +12,6 @@ class AppNotifications {
     let notificationCenter = UNUserNotificationCenter.current()
     let delegate = UNUserNotificationCenterDelegate.self
 
-    // Define the custom actions.
     let confirmAction = UNNotificationAction(identifier: "CONFIRM_ACTION",
           title: "Yes",
           options: [])
@@ -22,12 +21,11 @@ class AppNotifications {
 
     let content = UNMutableNotificationContent()
 
-    func configuringNotifications() {
+    func configureNotification() {
         notificationCenter.requestAuthorization(options: [.alert, .sound]) {
             (granted, error) in
         }
 
-        // Define the notification type
         let areYouBusyCategory =
               UNNotificationCategory(identifier: "ARE_YOU_BUSY_QUESTION",
               actions: [confirmAction, denyAction],
@@ -35,17 +33,16 @@ class AppNotifications {
               hiddenPreviewsBodyPlaceholder: "",
               options: .customDismissAction)
 
-        // Register the notification type.
         notificationCenter.setNotificationCategories([areYouBusyCategory])
     }
 
-    func configureNotification() {
+    func configureNotificationContent() {
         content.title = "Are you busy?"
         content.body = "Please confirm that you are currently doing something."
         content.categoryIdentifier = "ARE_YOU_BUSY_QUESTION"
     }
 
-    func setSchedule() {
+    func setNotificationSchedule() {
         let date = Date().addingTimeInterval(5)
         let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
