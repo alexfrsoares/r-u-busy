@@ -21,9 +21,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         numberLabel.text = String(Int.random(in: 1...100))
 
-        appNotification.askForPermission()
         appNotification.configureNotification()
-        appNotification.setSchedule()
+        appNotification.configureNotificationContent()
+        appNotification.setNotificationSchedule()
     }
 
 }
