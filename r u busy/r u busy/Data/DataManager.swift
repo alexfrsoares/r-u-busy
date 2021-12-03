@@ -20,8 +20,8 @@ class DataManager {
         }
     }
 
-    func loadData() -> [TimeTracked] {
-        let request: NSFetchRequest<TimeTracked> = TimeTracked.fetchRequest()
+    func loadData() -> [TrackedTime] {
+        let request: NSFetchRequest<TrackedTime> = TrackedTime.fetchRequest()
 
 //        let yesterday = Date()
 //        request.predicate = NSPredicate(format: "date BETWEEN %@", [yesterday.startDate(), yesterday.endDate()])

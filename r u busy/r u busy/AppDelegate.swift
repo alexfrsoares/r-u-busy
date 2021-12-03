@@ -33,21 +33,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    // MARK: UNUserNotificationCenterDelegate - Handling Notification-related Actions
+    // MARK: - User Notification Center handling notification-related actions
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         if response.notification.request.content.categoryIdentifier == "ARE_YOU_BUSY_QUESTION" {
             switch response.actionIdentifier {
             case "CONFIRM_ACTION":
-               print("User busy")
-               break
+                DataHandler().tracked(isBusy: true)
+                break
 
             case "DENY_ACTION":
-               print("User not busy")
-               break
+                DataHandler().tracked(isBusy: false)
+                break
 
             default:
-               break
+                break
             }
         }
 

@@ -2,15 +2,16 @@
 //  DataHandler.swift
 //  r u busy
 //
-//  Created by Alex Freitas on 02/12/21.
+//  Created by Alex Freitas on 03/12/21.
 //
 
 import Foundation
 
-struct DataHandler {
-    static func getTimeTrackedPerDay(date: Date) -> [TimeTracked] {
-        let dateComponents = TimeHandler.getComponents(date: date)
-
-        return []
+class DataHandler {
+    func tracked(isBusy: Bool) {
+        let trackedTime = TrackedTime(context: DataManager().context)
+        trackedTime.date = Date()
+        trackedTime.isBusy = isBusy
+        DataManager().saveData()
     }
 }
