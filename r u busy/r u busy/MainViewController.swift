@@ -8,22 +8,42 @@
 import Foundation
 import UIKit
 
+protocol BusyTimesLabelDelegate: AnyObject {
+    func updateBusyTimesValue()
+}
+
 class MainViewController: UIViewController {
 
     @IBOutlet weak var youWereBusyLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var timesLabel: UILabel!
-    @IBOutlet weak var genericLabel: UILabel!
 
     let appNotification = AppNotifications()
+    var busyTimesCounter: Int {
+        return DataHandler().getBusyTimesCounter()
+    }
+    var appDelegate: AppDelegate? = UIApplication.shared.delegate as? AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        numberLabel.text = String(Int.random(in: 1...100))
+        appDelegate?.busyTimesDelegate = self
+        updateBusyTimesValue()
 
-        appNotification.configureNotification()
-        appNotification.configureNotificationContent()
-        appNotification.setNotificationSchedule()
+        setNotifications()
     }
 
+    private func setNotifications() {
+        appNotification.configureNotification()
+
+        MockedSchedule.getIntervals().forEach { interval in
+            let date = Date().addingTimeInterval(interval)
+            appNotification.setNotificationSchedule(date: date)
+        }
+    }
+}
+
+extension MainViewController: BusyTimesLabelDelegate {
+    func updateBusyTimesValue() {
+        numberLabel.text = "\(busyTimesCounter)"
+    }
 }

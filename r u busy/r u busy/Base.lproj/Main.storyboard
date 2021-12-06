@@ -16,48 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JSc-Z1-iA8">
-                                <rect key="frame" x="152" y="408.5" width="110.5" height="133"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JSc-Z1-iA8">
+                                <rect key="frame" x="119" y="374" width="176.5" height="202.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You were busy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDY-WT-chI">
-                                        <rect key="frame" x="0.0" y="0.0" width="110.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="8hB-bT-ZrP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar2-Hu-qrF">
-                                        <rect key="frame" x="18" y="30.5" width="74" height="72"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <rect key="frame" x="37" y="52" width="102" height="92.5"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="80"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y42-Ur-5ox">
-                                        <rect key="frame" x="34" y="112.5" width="42" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="47.5" y="164.5" width="81" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="3fC-iK-HEh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buzzinga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpn-1a-KzQ">
-                                <rect key="frame" x="172" y="345.5" width="70" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JSc-Z1-iA8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3DK-ze-ke0"/>
-                            <constraint firstItem="Fpn-1a-KzQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Bva-Wc-GE4"/>
                             <constraint firstItem="JSc-Z1-iA8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JwB-Pw-cPs"/>
-                            <constraint firstItem="JSc-Z1-iA8" firstAttribute="top" secondItem="Fpn-1a-KzQ" secondAttribute="bottom" constant="42.5" id="xCL-po-72a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Czo-d5-6qG"/>
                     <connections>
-                        <outlet property="genericLabel" destination="Fpn-1a-KzQ" id="n4g-Mm-TDo"/>
                         <outlet property="numberLabel" destination="ar2-Hu-qrF" id="htR-g2-Ny6"/>
                         <outlet property="timesLabel" destination="y42-Ur-5ox" id="nAL-kI-Vpf"/>
                         <outlet property="youWereBusyLabel" destination="EDY-WT-chI" id="BjU-5Q-fVz"/>
